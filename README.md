@@ -32,7 +32,7 @@
 - [Introduction](#introduction)
 - [Examples](#examples)
 - [Installation](#installation)
-- [Useage](#useage)
+- [Usage](#usage)
 - [TODO](#todo)
 - [Acknowledgement](#acknowledgement)
 - [BibTeX](#bibtex)
@@ -45,7 +45,7 @@ Current image editing methods using DDIM Inversion face challenges with non-rigi
 
 ## Installation
 
-## Useage
+## Usage
 
 ## TODO
 The repo is still being under construction, thanks for your patience. 
