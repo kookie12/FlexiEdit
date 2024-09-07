@@ -1,0 +1,35 @@
+_global_setting:
+  model_path: ../../pretrain_SD_models/stabilityai/stable-diffusion-2-1-base
+  save_path: ./outputs/result_flexiedit_0905/fatty-corgi/A photo of standing corgi/sample_1
+  source_image_path: ./images/fatty-corgi.jpg
+  source_prompt: A photo of sitting corgi
+  target_prompt: A photo of standing corgi
+flexiedit:
+  adain_end_step: 50
+  adain_start_step: 30
+  alpha: 0.7
+  d_s: 0.3
+  d_t: 0.3
+  n: 4
+  refined_step: 0
+  reinversion_step: 40
+  user_bbx:
+    end_point: (456, 455)
+    start_point: (231, 382)
+flexiedit_advanced:
+  adain_end_step: 40
+  adain_start_step: 20
+  app_end_step: 40
+  app_start_layer: 10
+  app_start_step: 4
+  appearance_invert_flag: true
+  contrast_strength: 1.67
+  conv_injection_t: 40
+  injection_step: 1
+  latent_blend_step: 0
+  latent_blend_type: bg
+  mode: both
+  struct_end_step: 25
+  struct_invert_flag: true
+  struct_start_layer: 0
+  struct_start_step: 0
