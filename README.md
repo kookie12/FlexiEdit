@@ -44,11 +44,7 @@ Current image editing methods using DDIM Inversion face challenges with non-rigi
 <!-- ## Examples -->
 
 ## 💻 Installation
-It is recommended to run our code on a Nvidia GPU with a linux system. We have not yet tested on other configurations. Currently, it requires around 14 GB GPU memory to run our method. 
-
-It is recommended to run our code on a Nvidia GPU with a Linux system. We have not yet tested on other configurations. Currently, it requires around 14 GB GPU memory to run our method.
-
-
+It is recommended to run our code on a Nvidia GPU with a linux system. We have not yet tested on other configurations. Currently, it requires around 20 GB GPU memory to run our method. 
 
 To install the required libraries, simply run the following command:
 ```
