@@ -50,7 +50,7 @@ To install the required libraries, simply run the following command:
 ```
 git clone https://github.com/kookie12/FlexiEdit.git
 cd FlexiEdit
-conda env create -f environment.yaml
+conda env create -f environment.yml
 conda activate flexiedit
 ```
 

@@ -6,7 +6,7 @@ if __name__ == "__main__":
     ### fatty-corgi ###
     main(
         model_path = "../../pretrain_SD_models/CompVis/stable-diffusion-v1-4", #NOTE: please change the path to the model
-        out_dir="./outputs/result_flexiedit_test/", 
+        out_dir="./outputs/result_flexiedit/", 
         source_image_path="./images/fatty-corgi.jpg",
         source_prompt="A corgi is sitting on the floor",
         target_prompt="A corgi is standing on the floor",

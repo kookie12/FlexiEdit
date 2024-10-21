@@ -25,7 +25,7 @@ class AttentionBase:
         pass
 
     def __call__(self, q, k, v, sim, attn, is_cross, place_in_unet, num_heads, **kwargs):
-        out = self.forward(q, k, v, sim, attn, is_cross, place_in_unet, num_heads, **kwargs) # NOTE: 요기서 attention_utils.py에 있는 pipeline으로 이동!
+        out = self.forward(q, k, v, sim, attn, is_cross, place_in_unet, num_heads, **kwargs) # NOTE: Move to the pipeline in attention_utils.py here!
         self.cur_att_layer += 1
         if self.cur_att_layer == self.num_att_layers:
             self.cur_att_layer = 0

@@ -340,7 +340,7 @@ class FE_MutualSelfAttentionControlMaskAuto(FE_MutualSelfAttentionControl):
         out = torch.cat([out_u_source, out_u_target, out_c_source, out_c_target], dim=0)
         return out
 
-#NOTE: 이건 mask가 안주어져도 자동으로 mask를 생성 => 원본 이미지가 깨지는 경우 발생
+# NOTE: This will automatically generate a mask if no mask is provided => may result in distortion of the original image
 class FE_MutualSelfAttentionControlMaskAuto(FE_MutualSelfAttentionControl):
     def __init__(self, start_step=4, start_layer=10, layer_idx=None, step_idx=None, total_steps=50, thres=0.1, ref_token_idx=[1], cur_token_idx=[1], mask_save_dir=None):
         """

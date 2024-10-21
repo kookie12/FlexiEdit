@@ -229,7 +229,7 @@ def main(
     overwatch.info(f"1st stage 🔥 ==>> Inverting source image")
     inv_start_code, inv_latents_list = flexiedit.invert(source_image,
                                             source_prompt,
-                                            guidance_scale=inv_scale, # 여기서 (a, b) 튜플로 들어오면 proxinpi 사용됨. 지금은 그냥 1로 설정
+                                            guidance_scale=inv_scale, # Here, if a tuple (a, b) is provided, proxinpi is used; currently set to 1.
                                             num_inference_steps=num_inference_steps,
                                             reinversion_steps = 0,
                                             return_intermediates=True,
@@ -382,7 +382,7 @@ def main(
                         npi_interp=npi_interp_2nd,
                         npi_step=npi_step,
                         mode='REINVERSION',
-                        latent_filter=[inv_latents_list[reinversion_steps].expand(len(prompts), -1, -1, -1), None, None, None], #NOTE: 여기 inv로 해야한다!!
+                        latent_filter=[inv_latents_list[reinversion_steps].expand(len(prompts), -1, -1, -1), None, None, None],
                         params={"n": n,
                                 "alpha": alpha,
                                 "reinversion_step": reinversion_steps,
@@ -449,6 +449,7 @@ def main(
     conv_injection_timesteps = scheduler.timesteps[:config2.conv_injection_t:config2.injection_step] if config2.conv_injection_t >= 0 else []
     register_conv_control_efficient(flexiedit, conv_injection_timesteps)
     
+    #NOTE: New version of FlexiEdit: Re-Target Branch
     overwatch.info(f"6th Stage 🔥 ==>> New version of FlexiEdit!!")
     image_results = flexiedit(prompts,
                         latents=new_start_code,
@@ -480,7 +481,7 @@ def main(
     
     #NOTE: automatic mask 
     if bbx_start_point != None and bbx_end_point != None:
-        out_image_mask = draw_mask(out_image_mid, bbx_start_point, bbx_end_point) #NOTE: 이제 이거 수정하자!
+        out_image_mask = draw_mask(out_image_mid, bbx_start_point, bbx_end_point)
         
     else:
         # draw mask in out_image_mask
