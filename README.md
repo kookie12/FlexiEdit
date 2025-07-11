@@ -4,7 +4,7 @@
 <p align="center">
     <a href="https://kookie12.github.io/">Gwanhyeong Koo</a>,
     <a href="https://dbstjswo505.github.io/">Sunjae Yoon</a>,
-    <a href="http://sanctusfactory.com/family_02.php">Ji Woo Hong</a>,
+    <a href="https://jiwoohong93.github.io/">Ji Woo Hong</a>,
     <a href="http://sanctusfactory.com/family.php">Chang D. Yoo</a>
     <br>
     <b>KAIST</b>
