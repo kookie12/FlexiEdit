@@ -78,6 +78,9 @@ Our code is based on these awesome repos:
 * [ProxEdit](https://arxiv.org/abs/2306.05414) [[code](https://github.com/phymhan/prompt-to-prompt?tab=readme-ov-file)]
 * [MasaCtrl](https://arxiv.org/abs/2304.08465) [[code](https://github.com/TencentARC/MasaCtrl)]
 
+## Acknowledgement (Funding)
+This work was partly supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and partly supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.2022-0-00184, Development and Study of AI Technologies to Inexpensively Conform to Evolving Policy on Ethics).
+
 ## 📖 BibTeX
 If you find our repo helpful, please consider leaving a star or cite our paper :)
 ```bibtex
